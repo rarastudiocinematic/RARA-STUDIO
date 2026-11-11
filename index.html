@@ -1,14 +1,27 @@
-<!doctype html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07050e" />
-    <meta name="description" content="RARA STUDIO — studio reka visual mandiri untuk produksi sinematik." />
-    <title>RARA STUDIO — Produksi Sinematik Mandiri</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RARA STUDIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { gold: '#EAB308', dark: '#121212' } } } }
+    </script>
+</head>
+<body class="bg-dark text-white min-h-screen flex flex-col items-center justify-center p-6">
+    <div class="text-center max-w-2xl w-full">
+        <h1 class="text-5xl font-bold text-gold mb-4 tracking-wider drop-shadow-lg">RARA STUDIO</h1>
+        <p class="text-gray-400 text-lg mb-6">Platform Digital Modern • F2FS Flash-Optimized</p>
+        <div class="bg-gray-800 p-6 rounded-2xl border border-gold/30 shadow-2xl shadow-gold/10">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                <span class="text-gold font-semibold">SISTEM BERJALAN SEMPURNA</span>
+            </div>
+            <div class="text-sm text-gray-400 border-t border-gray-700 pt-4">
+                Host: <span class="text-white">rara-core-2</span> | Storage: <span class="text-white">62GB</span>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
